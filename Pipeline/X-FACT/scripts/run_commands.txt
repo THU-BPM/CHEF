@@ -1,0 +1,93 @@
+python examples/text-classification/run_glue.py --model_name_or_path ../models/mnli/roberta-base/ --task_name MNLI --do_eval --data_dir data/mnli/ --max_seq_length 128 --per_device_train_batch_size 32 --output_dir ../models/mnli/roberta-base/
+
+python examples/text-classification/run_glue.py --model_name_or_path albert-base-v2 --task_name MNLI --do_train --do_eval --data_dir data/mnli/ --max_seq_length 256 --per_device_eval_batch_size=16 --per_device_train_batch_size=16 --learning_rate 2e-5 --num_train_epochs 3.0 --output_dir ../models/mnli/albert-base-v2
+
+python examples/text-classification/run_glue.py --model_name_or_path bert-base-uncased --task_name MNLI --do_train --do_eval --data_dir data/mnli/ --max_seq_length 256 --per_device_eval_batch_size=16 --per_device_train_batch_size=32 --learning_rate 2e-5 --num_train_epochs 3.0 --output_dir ../models/mnli/bert-base-word-replacement --word_replacement 0.15 --overwrite_output_dir --save_steps 40000
+
+python examples/text-classification/run_glue.py --model_name_or_path bert-base-uncased --task_name MNLI --do_train --do_eval --data_dir data/mnli/ --max_seq_length 256 --per_device_eval_batch_size=16 --per_device_train_batch_size=32 --learning_rate 2e-5 --num_train_epochs 3.0 --output_dir ../models/mnli/bert-base-label-smoothing_0.1 --overwrite_output_dir --save_steps 40000 --criterion label_smoothing --label_smoothing 0.1
+
+python examples/text-classification/run_glue.py --model_name_or_path bert-base-uncased --task_name MNLI --do_train --do_eval --data_dir data/mnli/ --max_seq_length 256 --per_device_eval_batch_size=16 --per_device_train_batch_size=32 --learning_rate 2e-5 --num_train_epochs 3.0 --output_dir ../models/mnli/bert-base-freeze_full --overwrite_output_dir --save_steps 40000 --freeze_full_bert
+
+python examples/text-classification/run_glue.py --model_name_or_path bert-base-uncased --task_name MNLI --do_train --do_eval --data_dir data/mnli/ --max_seq_length 256 --per_device_eval_batch_size=16 --per_device_train_batch_size=16 --learning_rate 2e-5 --num_train_epochs 3.0 --output_dir ../models/mnli/bert-base-input_grad_reg_0.01 --overwrite_output_dir --save_steps 40000 --input_grad_regularization 0.01
+
+python examples/text-classification/run_glue.py --model_name_or_path ../models/mnli/bert-base-input_grad_reg_0.0001 --task_name MNLI --do_train --do_eval --data_dir data/mnli/ --max_seq_length 256 --per_device_eval_batch_size=16 --per_device_train_batch_size=16 --num_train_epochs 2.0 --output_dir ../models/mnli/bert-base-_retrain_input_grad_reg_0.0005 --save_steps 40000 --input_grad_regularization 0.0005 --evaluate_during_training
+
+python examples/text-classification/run_glue.py --model_name_or_path bert-base-uncased --task_name MNLI --do_train --do_eval --data_dir data/mnli_87k_adv/ --max_seq_length 256 --per_device_eval_batch_size=16 --per_device_train_batch_size=32 --learning_rate 2e-5 --num_train_epochs 3.0 --output_dir ../models/mnli/bert-base-textfooler_augmented_87k --overwrite_output_dir --save_steps 40000
+
+python examples/text-classification/run_xnli.py --model_name_or_path bert-base-multilingual-cased --language de --train_language en --do_train --do_eval --data_dir data/xnli  --learning_rate 5e-5 --num_train_epochs 2.0 --max_seq_length 128 --output_dir models/xnli_mbert_base --save_steps 40000
+
+python3 format_xfact_to_sst2.py data/xfact/mapped_data/train.hi_en_altnews_in.tsv data/sst2-hi_en_altnews_in/train.tsv
+
+python examples/text-classification/run_glue.py --model_name_or_path bert-base-multilingual-cased --task_name sst-2 --do_train --do_eval --data_dir data/sst2/ --learning_rate 2e-5 --num_train_epochs 3.0 --max_seq_length 128 --output_dir models/mbert_en_altnews_2/ --save_steps 1000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 32
+
+
+python examples/text-classification/run_glue.py --model_name_or_path bert-base-multilingual-cased --task_name sst-2 --do_train --do_eval --data_dir data/sst2-hi_altnews_in/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 128 --output_dir models/mapped/glue_mbert_hi_altnews_in --save_steps 1000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 32
+
+
+ar_factuel_afp_com bn_bengali_newschecker_in bn_boombd_com bn_dailyo_in en_altnews_in en_boomlive_in en_factly_in en_healthfeedback_org en_indiatoday_in en_newschecker_in en_thelogicalindian_com en_vishvasnews_com es_animalpolitico_com es_chequeado_com es_colombiacheck_com es_efe_com es_maldita_es es_newtral_es fr_20minutes_fr hi_aajtak_in hi_altnews_in hi_bbc_com hi_vishvasnews_com it_agi_it it_pagellapolitica_it ml_malayalam_factcrescendo_com nl_nieuwscheckers_nl no_faktisk_no pa_vishvasnews_com pl_sprawdzam_afp_com pt_aosfatos_org pt_apublica_org pt_boatos_org pt_bol_uol_com_br pt_noticias_uol_com_br pt_observador_pt pt_piaui_folha_uol_com_br pt_poligrafo_sapo_pt sq_kallxo_com sr_istinomer_rs ta_tamil_factcrescendo_com ta_youturn_in te_factly_in tr_teyit_org ur_vishvasnews_com zh_tfc-taiwan_org_tw
+
+
+python examples/text-classification/run_xfact.py --model_name_or_path models/mapped/xfact_en_altnews_in_mbert_base/ --sources en_altnews_in --do_eval --data_dir data/xfact/mapped_data/  --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 128 --output_dir models/mapped/xfact_en_altnews_in_mbert_base/ --save_steps 1000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 32 --evaluate_during_training
+
+
+python examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_eval --data_dir data/xfact/mapped_data/  --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 128 --output_dir models/most_data/xfact_most_mbert_base/ --save_steps 10000 --per_gpu_train_batch_size 16 --per_gpu_eval_batch_size 32 --sources ar_factuel_afp_com bn_bengali_newschecker_in bn_boombd_com bn_dailyo_in en_altnews_in en_boomlive_in en_factly_in en_healthfeedback_org en_indiatoday_in en_newschecker_in en_thelogicalindian_com en_vishvasnews_com es_animalpolitico_com es_chequeado_com es_colombiacheck_com es_efe_com es_maldita_es es_newtral_es fr_20minutes_fr hi_aajtak_in hi_altnews_in hi_bbc_com hi_vishvasnews_com it_agi_it it_pagellapolitica_it ml_malayalam_factcrescendo_com nl_nieuwscheckers_nl no_faktisk_no pa_vishvasnews_com pl_sprawdzam_afp_com pt_aosfatos_org pt_apublica_org pt_boatos_org pt_bol_uol_com_br pt_noticias_uol_com_br pt_observador_pt pt_piaui_folha_uol_com_br pt_poligrafo_sapo_pt sq_kallxo_com sr_istinomer_rs ta_tamil_factcrescendo_com ta_youturn_in te_factly_in tr_teyit_org ur_vishvasnews_com zh_tfc-taiwan_org_tw
+
+
+limit = 0.7 :  bn_bengali_newschecker_in  bn_dailyo_in    en_healthfeedback_org en_indiatoday_in en_newschecker_in           es_animalpolitico_com es_chequeado_com      hi_aajtak_in          hi_bbc_com  it_agi_it it_pagellapolitica_it  nl_nieuwscheckers_nl no_faktisk_no                    pl_sprawdzam_afp_com  pt_apublica_org     pt_piaui_folha_uol_com_br pt_poligrafo_sapo_pt        sq_kallxo_com sr_istinomer_rs ta_tamil_factcrescendo_com ta_youturn_in
+
+
+python examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact/datasets_10_nov/ --learning_rate 2e-5 --num_train_epochs 5.0 --max_seq_length 128 --output_dir models/xfact_10_nov_data/mbert-es_chequeado_com --save_steps 10000 --per_gpu_train_batch_size 16 --per_gpu_eval_batch_size 32 --sources es_chequeado_com
+
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact/evidences_datasets_10_nov --learning_rate 2e-5 --num_train_epochs 20.0 --max_seq_length 320 --output_dir models/xfact_evidences_10_nov_data/mbert-hi_aajtak_in_evi_5/ --save_steps 10000 --per_gpu_train_batch_size 4 --per_gpu_eval_batch_size 4 --sources hi_aajtak_in --overwrite_output_dir --seed 12 --num_evidences 5 --logging_steps 208 --evaluate_during_training
+
+
+python -u examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact/final_data/datasets_evidences/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 256 --output_dir models/final_data/claim_only/mbert-all --save_steps 40000 --per_gpu_train_batch_size 16 --per_gpu_eval_batch_size 32 --sources all --logging_steps 1762 --evaluate_during_training | tee logs/final_data_claim_only_mbert_all.txt
+
+python -u examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact/final_data/datasets_evidences_excluding_en/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 256 --output_dir models/final_data/claim_only/mbert-all_excluding_en --save_steps 40000 --per_gpu_train_batch_size 16 --per_gpu_eval_batch_size 32 --sources all --logging_steps 1189 --evaluate_during_training | tee logs/final_data_claim_only_mbert_all_excluding_en.txt
+
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact/final_data/datasets_evidences_excluding_en/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 400 --output_dir models/final_data/evidences/mbert-all_excluding_en --save_steps 40000 --per_gpu_train_batch_size 6 --per_gpu_eval_batch_size 6 --sources all --logging_steps 3170 --evaluate_during_training --num_evidences 3 | tee logs/final_data_evidences_3_mbert_all_excluding_en.txt
+
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact/final_data/datasets_evidences_excluding_en_reversed/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 512 --output_dir models/final_data/evidences/mbert-all_excluding_en_9_dec_reveresed --save_steps 40000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --num_evidences 5 --overwrite_output_dir --save_every_epoch
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact_6_jan/data_6_jan_evidences/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 512 --output_dir tmp/mbert_all_evidences_5_seed_1 --save_steps 40000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --num_evidences 5 --overwrite_output_dir --save_every_epoch --seed 1
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path tmp/mbert_all_evidences_5_seed_1 --do_eval --data_dir data/xfact_6_jan/data_6_jan_evidences/ --max_seq_length 512 --output_dir tmp/mbert_all_evidences_5_seed_1 --per_gpu_eval_batch_size 8 --sources all --num_evidences 5  --evaluate_file test.all.tsv
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path tmp/mbert_all_evidences_5_seed_1 --do_eval --data_dir data/xfact_6_jan/data_6_jan_evidences/ --max_seq_length 512 --output_dir tmp/mbert_all_evidences_5_seed_1 --per_gpu_eval_batch_size 8 --sources all --num_evidences 5
+
+python -u examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/xfact_6_jan/data_6_jan_evidences/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 512 --output_dir tmp/mbert_all_claim_only_seed_1 --save_steps 40000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --overwrite_output_dir --save_every_epoch --seed 1
+
+python -u examples/text-classification/run_xfact.py --do_eval --max_seq_length 512 --per_gpu_eval_batch_size 8 --sources all --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_evidences_links/ --output_dir models/27_jan_claim_only/mbert-all_excluding_en_seed_2 --model_name_or_path models/27_jan_claim_only/mbert-all_excluding_en_seed_2 --evaluate_file test.all.tsv
+
+
+
+python examples/text-classification/run_xfact_evidence.py --do_eval --max_seq_length 512 --per_gpu_eval_batch_size 32 --sources all --num_evidences 5  --evaluate_file test.all.tsv --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_evidences_links/ --model_name_or_path models/27_jan/mbert-all_excluding_en_seed_1/ --output_dir models/27_jan/mbert-all_excluding_en_seed_1/
+
+
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_evidences_links/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 512 --save_steps 40000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --num_evidences 5 --overwrite_output_dir --save_every_epoch --use_metadata --output_dir models/27_jan_metadata/mbert-all_excluding_en_seed_1 --seed 1
+
+python -u examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_evidences_links/ --max_seq_length 512 --per_gpu_eval_batch_size 8 --sources all --learning_rate 2e-5 --num_train_epochs 10.0 --save_steps 40000  --per_gpu_train_batch_size 8 --overwrite_output_dir --save_every_epoch --use_metadata --evaluate_during_training --output_dir models/27_jan_claim_metadata/mbert-all_excluding_en_seed_1 --seed 1
+
+python -u examples/text-classification/run_xfact.py --do_eval --max_seq_length 512 --per_gpu_eval_batch_size 64 --sources all --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_evidences_links/ --use_metadata --output_dir models/27_jan_claim_only/mbert-all_excluding_en_seed_1 --model_name_or_path models/27_jan_claim_metadata/mbert-all_excluding_en_seed_1 --evaluate_file test.all.tsv
+
+python examples/text-classification/run_xfact_evidence.py --do_eval --max_seq_length 512 --per_gpu_eval_batch_size 32 --sources all --num_evidences 5  --evaluate_file test.all.tsv --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_evidences_links/ --use_metadata --model_name_or_path models/27_jan_metadata/mbert-all_excluding_en_seed_1 --output_dir models/27_jan_metadata/mbert-all_excluding_en_seed_1
+
+python examples/text-classification/run_xfact_evidence.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_including_en_evidences_links/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 512 --save_steps 40000 --per_gpu_train_batch_size 8 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --num_evidences 5 --overwrite_output_dir --save_every_epoch --use_metadata --output_dir models/27_jan_including_en_metadata/mbert-all_excluding_en_seed_1 --seed 1
+
+python -u examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/data_6_jan_including_en_evidences_links/ --max_seq_length 512 --per_gpu_eval_batch_size 8 --sources all --learning_rate 2e-5 --num_train_epochs 10.0 --save_steps 40000  --per_gpu_train_batch_size 8 --overwrite_output_dir --save_every_epoch --use_metadata --evaluate_during_training --output_dir models/27_jan_including_en_claim_metadata/mbert-all_excluding_en_seed_1 --seed 1
+
+
+python -u examples/text-classification/run_xfact.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir data/final_data_evidences_en/ --max_seq_length 512 --per_gpu_eval_batch_size 8 --sources all --learning_rate 2e-5 --num_train_epochs 10.0 --save_steps 40000  --per_gpu_train_batch_size 8 --overwrite_output_dir --save_every_epoch --evaluate_during_training --output_dir all_models/claim_only_wo_metadata/claim_only_excluding_en_seed_1/ --seed 1
+
+
+python examples/text-classification/run_xfact_evidence_attention.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/final_data_evidences_en/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 360 --save_steps 40000 --per_gpu_train_batch_size 12 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --num_evidences 5 --overwrite_output_dir --save_every_epoch --use_metadata --output_dir all_models/evidences_attn/mbert-all_excluding_num_5_en_seed_2 --seed 2
+
+
+python examples/text-classification/run_xfact_evidence_attention.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/final_data_evidences_en/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 360 --save_steps 40000 --per_gpu_train_batch_size 12 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --num_evidences 5 --overwrite_output_dir --save_every_epoch --use_metadata --output_dir all_models/evidences_attn/mbert-all_excluding_num_5_en_seed_2 --seed 2
+
+
+python examples/text-classification/run_xfact_evidence_attention.py --model_name_or_path bert-base-multilingual-cased --do_train --do_eval --data_dir /uufs/chpc.utah.edu/common/home/u1266434/factcheck/transformers/data/final_data_evidences_en/ --learning_rate 2e-5 --num_train_epochs 10.0 --max_seq_length 360 --save_steps 40000 --per_gpu_train_batch_size 12 --per_gpu_eval_batch_size 8 --sources all  --evaluate_during_training --num_evidences 5 --overwrite_output_dir --save_every_epoch --output_dir all_models/evidences_attn_wo_metadata/mbert-all_excluding_num_5_en_seed_1 --seed 1

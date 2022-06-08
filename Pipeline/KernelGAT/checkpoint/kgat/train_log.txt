@@ -1,0 +1,117 @@
+[08-06-2022 09:21:19] INFO: Namespace(bert_hidden_dim=768, bert_pretrain='bert-base-chinese', cuda=True, dropout=0.6, eval_step=500, evi_num=5, evidence_type='gold', gradient_accumulation_steps=8, kernel=21, layer=1, learning_rate=5e-05, max_len=128, no_cuda=False, num_labels=3, num_train_epochs=16.0, outdir='checkpoint/kgat', patience=20, pool='att', postpretrain=None, threshold=0.0, train_batch_size=8, train_path='../data/chef/CHEF_train.json', valid_batch_size=8, valid_path='../data/chef/CHEF_test.json', warmup_proportion=0.1, weight_decay=0.0005)
+[08-06-2022 09:21:19] INFO: Start training!
+[08-06-2022 09:21:19] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:21:20] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+[08-06-2022 09:21:20] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:21:21] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+[08-06-2022 09:21:21] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:21:22] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+[08-06-2022 09:21:22] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:21:23] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[08-06-2022 09:21:23] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:21:24] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+[08-06-2022 09:21:24] INFO: loading training set
+[08-06-2022 09:21:25] INFO: loading validation set
+[08-06-2022 09:21:25] INFO: initializing estimator model
+[08-06-2022 09:21:25] DEBUG: Starting new HTTPS connection (1): s3.amazonaws.com:443
+[08-06-2022 09:21:26] DEBUG: https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-chinese.tar.gz HTTP/1.1" 200 0
+[08-06-2022 09:21:26] INFO: loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz from cache at /home/xuminghu/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f
+[08-06-2022 09:21:26] INFO: extracting archive file /home/xuminghu/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f to temp dir /tmp/tmpjw5iryt9
+[08-06-2022 09:21:30] INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+[08-06-2022 09:23:03] INFO: Namespace(bert_hidden_dim=768, bert_pretrain='bert-base-chinese', cuda=True, dropout=0.6, eval_step=500, evi_num=5, evidence_type='gold', gradient_accumulation_steps=8, kernel=21, layer=1, learning_rate=5e-05, max_len=128, no_cuda=False, num_labels=3, num_train_epochs=16.0, outdir='checkpoint/kgat', patience=20, pool='att', postpretrain=None, threshold=0.0, train_batch_size=8, train_path='../data/chef/CHEF_train.json', valid_batch_size=8, valid_path='../data/chef/CHEF_test.json', warmup_proportion=0.1, weight_decay=0.0005)
+[08-06-2022 09:23:03] INFO: Start training!
+[08-06-2022 09:23:03] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:23:04] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+[08-06-2022 09:23:04] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:23:05] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+[08-06-2022 09:23:05] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:23:06] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+[08-06-2022 09:23:06] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:23:07] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[08-06-2022 09:23:07] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 09:23:08] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+[08-06-2022 09:23:08] INFO: loading training set
+[08-06-2022 09:23:09] INFO: loading validation set
+[08-06-2022 09:23:09] INFO: initializing estimator model
+[08-06-2022 09:23:09] DEBUG: Starting new HTTPS connection (1): s3.amazonaws.com:443
+[08-06-2022 09:23:10] DEBUG: https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-chinese.tar.gz HTTP/1.1" 200 0
+[08-06-2022 09:23:10] INFO: loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz from cache at /home/xuminghu/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f
+[08-06-2022 09:23:10] INFO: extracting archive file /home/xuminghu/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f to temp dir /tmp/tmpe3ovd_tl
+[08-06-2022 09:23:14] INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+
+[08-06-2022 10:28:25] INFO: Namespace(bert_hidden_dim=768, bert_pretrain='bert-base-chinese', cuda=True, dropout=0.6, eval_step=500, evi_num=5, evidence_type='gold', gradient_accumulation_steps=8, kernel=21, layer=1, learning_rate=5e-05, max_len=128, no_cuda=False, num_labels=3, num_train_epochs=16.0, outdir='checkpoint/kgat', patience=20, pool='att', postpretrain=None, threshold=0.0, train_batch_size=8, train_path='../data/chef/CHEF_train.json', valid_batch_size=8, valid_path='../data/chef/CHEF_test.json', warmup_proportion=0.1, weight_decay=0.0005)
+[08-06-2022 10:28:25] INFO: Start training!
+[08-06-2022 10:28:25] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 10:28:27] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+[08-06-2022 10:28:27] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 10:28:28] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+[08-06-2022 10:28:28] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 10:28:29] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+[08-06-2022 10:28:29] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 10:28:30] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[08-06-2022 10:28:30] DEBUG: Starting new HTTPS connection (1): huggingface.co:443
+[08-06-2022 10:28:31] DEBUG: https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+[08-06-2022 10:28:31] INFO: loading training set
+[08-06-2022 10:28:32] INFO: loading validation set
+[08-06-2022 10:28:32] INFO: initializing estimator model
+[08-06-2022 10:28:32] DEBUG: Starting new HTTPS connection (1): s3.amazonaws.com:443
+[08-06-2022 10:28:33] DEBUG: https://s3.amazonaws.com:443 "HEAD /models.huggingface.co/bert/bert-base-chinese.tar.gz HTTP/1.1" 200 0
+[08-06-2022 10:28:33] INFO: loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz from cache at /home/xuminghu/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f
+[08-06-2022 10:28:33] INFO: extracting archive file /home/xuminghu/.pytorch_pretrained_bert/42d4a64dda3243ffeca7ec268d5544122e67d9d06b971608796b483925716512.02ac7d664cff08d793eb00d6aac1d04368a1322435e5fe0a27c70b0b3a85327f to temp dir /tmp/tmp8m8nb385
+[08-06-2022 10:28:36] INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "pooler_num_fc_layers": 3,
+  "pooler_size_per_head": 128,
+  "pooler_type": "first_token_transform",
+  "type_vocab_size": 2,
+  "vocab_size": 21128
+}
+

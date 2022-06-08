@@ -1,0 +1,335 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AttentionMechanism	latent_rationale/nn/attention.py	/^class AttentionMechanism(nn.Module):$/;"	c
+BIN_REGEX	latent_rationale/snli/util.py	/^BIN_REGEX = re.compile(r"\\( | \\)")$/;"	v
+BOWEncoder	latent_rationale/nn/bow_encoder.py	/^class BOWEncoder(nn.Module):$/;"	c
+BahdanauAttention	latent_rationale/nn/attention.py	/^class BahdanauAttention(AttentionMechanism):$/;"	c
+Baseline	latent_rationale/sst/models/baseline.py	/^class Baseline(nn.Module):$/;"	c
+BeerExample	latent_rationale/beer/util.py	/^BeerExample = namedtuple("Example", ["tokens", "scores"])$/;"	v
+BeerTestExample	latent_rationale/beer/util.py	/^BeerTestExample = namedtuple("Example", ["tokens", "scores", "annotations"])$/;"	v
+BernoulliGate	latent_rationale/nn/bernoulli_gate.py	/^class BernoulliGate(nn.Module):$/;"	c
+CHEFClassifier	latent_rationale/common/classifier.py	/^class CHEFClassifier(nn.Module):$/;"	c
+CHEFDataset	latent_rationale/sst/CHEFtrain.py	/^class CHEFDataset(Dataset):$/;"	c
+CHEFRecurrentModel	latent_rationale/snli/models/recurrent.py	/^class CHEFRecurrentModel(nn.Module):$/;"	c
+CHEFtrain	latent_rationale/snli/CHEFtrain.py	/^def CHEFtrain():$/;"	f
+CNNEncoder	latent_rationale/nn/cnn_encoder.py	/^class CNNEncoder(nn.Module):$/;"	c
+Classifier	latent_rationale/common/classifier.py	/^class Classifier(nn.Module):$/;"	c
+DecompAttModel	latent_rationale/snli/models/decomposable.py	/^class DecompAttModel(nn.Module):$/;"	c
+DeepDotAttention	latent_rationale/nn/attention.py	/^class DeepDotAttention(AttentionMechanism):$/;"	c
+DependentGenerator	latent_rationale/common/generator.py	/^class DependentGenerator(nn.Module):$/;"	c
+DependentLatentModel	latent_rationale/common/latent.py	/^class DependentLatentModel(nn.Module):$/;"	c
+DotAttention	latent_rationale/nn/attention.py	/^class DotAttention(AttentionMechanism):$/;"	c
+EPS	latent_rationale/nn/kuma.py	/^EPS = 1e-6$/;"	v
+Encoder	latent_rationale/common/encoder.py	/^class Encoder(nn.Module):$/;"	c
+Example	latent_rationale/sst/util.py	/^Example = namedtuple("Example", ["tokens", "label", "token_labels"])$/;"	v
+HardBinary	latent_rationale/nn/kuma.py	/^class HardBinary(RV):$/;"	c
+HardKuma	latent_rationale/nn/kuma.py	/^class HardKuma(HardBinary):$/;"	c
+INIT_TOKEN	latent_rationale/beer/constants.py	/^INIT_TOKEN = "@@NULL@@"$/;"	v
+INIT_TOKEN	latent_rationale/snli/constants.py	/^INIT_TOKEN = "@@NULL@@"$/;"	v
+INIT_TOKEN	latent_rationale/sst/constants.py	/^INIT_TOKEN = "@@NULL@@"$/;"	v
+IndependentGenerator	latent_rationale/common/generator.py	/^class IndependentGenerator(nn.Module):$/;"	c
+IndependentLatentModel	latent_rationale/common/latent.py	/^class IndependentLatentModel(nn.Module):$/;"	c
+Kuma	latent_rationale/nn/kuma.py	/^class Kuma(RelaxedBinary):$/;"	c
+KumaAttention	latent_rationale/nn/kuma_attention.py	/^class KumaAttention(nn.Module):$/;"	c
+KumaDecompAttModel	latent_rationale/snli/models/decomposable_kuma.py	/^class KumaDecompAttModel(nn.Module):$/;"	c
+KumaGate	latent_rationale/nn/kuma_gate.py	/^class KumaGate(nn.Module):$/;"	c
+KumaSelfAttention	latent_rationale/nn/kuma_self_attention.py	/^class KumaSelfAttention(nn.Module):$/;"	c
+LSTMEncoder	latent_rationale/nn/lstm_encoder.py	/^class LSTMEncoder(nn.Module):$/;"	c
+LatentRationaleModel	latent_rationale/beer/models/latent.py	/^class LatentRationaleModel(nn.Module):$/;"	c
+LatentRationaleModel	latent_rationale/sst/models/latent.py	/^class LatentRationaleModel(nn.Module):$/;"	c
+LatentRationaleModelForCHEF	latent_rationale/sst/models/latent.py	/^class LatentRationaleModelForCHEF(nn.Module):$/;"	c
+MAX_CLAMP	latent_rationale/nn/kuma_attention.py	/^MAX_CLAMP = 100.$/;"	v
+MIN_CLAMP	latent_rationale/nn/kuma_attention.py	/^MIN_CLAMP = 1e-3$/;"	v
+NON_BIN_REGEX	latent_rationale/snli/util.py	/^NON_BIN_REGEX = re.compile(r"\\([A-Z.,:$]+|\\)")$/;"	v
+OrderedCounter	latent_rationale/beer/vocabulary.py	/^class OrderedCounter(Counter, OrderedDict):$/;"	c
+OrderedCounter	latent_rationale/sst/vocabulary.py	/^class OrderedCounter(Counter, OrderedDict):$/;"	c
+PAD_TOKEN	latent_rationale/beer/constants.py	/^PAD_TOKEN = "<pad>"$/;"	v
+PAD_TOKEN	latent_rationale/snli/constants.py	/^PAD_TOKEN = "<pad>"$/;"	v
+PAD_TOKEN	latent_rationale/sst/constants.py	/^PAD_TOKEN = "<pad>"$/;"	v
+ParsedTextField	latent_rationale/snli/text.py	/^class ParsedTextField(data.Field):$/;"	c
+RCNN	latent_rationale/nn/rcnn.py	/^class RCNN(nn.Module):$/;"	c
+RCNNCell	latent_rationale/nn/rcnn.py	/^class RCNNCell(nn.Module):$/;"	c
+RCNNEncoder	latent_rationale/nn/rcnn_encoder.py	/^class RCNNEncoder(nn.Module):$/;"	c
+REDUCE	latent_rationale/sst/constants.py	/^REDUCE = 1$/;"	v
+RLModel	latent_rationale/beer/models/rl.py	/^class RLModel(nn.Module):$/;"	c
+RLModel	latent_rationale/sst/models/rl.py	/^class RLModel(nn.Module):$/;"	c
+RV	latent_rationale/nn/kuma.py	/^class RV:$/;"	c
+RecurrentEncoder	latent_rationale/snli/encoder.py	/^class RecurrentEncoder(nn.Module):$/;"	c
+RecurrentModel	latent_rationale/snli/models/recurrent.py	/^class RecurrentModel(nn.Module):$/;"	c
+RelaxedBinary	latent_rationale/nn/kuma.py	/^class RelaxedBinary(RV):$/;"	c
+SHIFT	latent_rationale/sst/constants.py	/^SHIFT = 0$/;"	v
+SNLI	latent_rationale/snli/text.py	/^class SNLI(data.TabularDataset):$/;"	c
+SR_PAD	latent_rationale/sst/constants.py	/^SR_PAD = 2$/;"	v
+ShiftReduceField	latent_rationale/snli/text.py	/^class ShiftReduceField(data.Field):$/;"	c
+SimpleAttention	latent_rationale/nn/attention.py	/^class SimpleAttention(AttentionMechanism):$/;"	c
+SimpleClassifier	latent_rationale/beer/models/simpleclassifier.py	/^class SimpleClassifier(nn.Module):$/;"	c
+StretchedVariable	latent_rationale/nn/kuma.py	/^class StretchedVariable(RelaxedBinary):$/;"	c
+UNK_TOKEN	latent_rationale/beer/constants.py	/^UNK_TOKEN = "<unk>"$/;"	v
+UNK_TOKEN	latent_rationale/snli/constants.py	/^UNK_TOKEN = "<unk>"$/;"	v
+UNK_TOKEN	latent_rationale/sst/constants.py	/^UNK_TOKEN = "<unk>"$/;"	v
+Vocabulary	latent_rationale/beer/vocabulary.py	/^class Vocabulary:$/;"	c
+Vocabulary	latent_rationale/sst/vocabulary.py	/^class Vocabulary:$/;"	c
+__all__	latent_rationale/beer/models/latent.py	/^__all__ = ["LatentRationaleModel"]$/;"	v
+__all__	latent_rationale/sst/models/latent.py	/^__all__ = ["LatentRationaleModel", "LatentRationaleModelForCHEF"]$/;"	v
+__getitem__	latent_rationale/sst/CHEFtrain.py	/^    def __getitem__(self, i):$/;"	m	class:CHEFDataset	file:
+__init__	latent_rationale/beer/models/latent.py	/^    def __init__(self,$/;"	m	class:LatentRationaleModel
+__init__	latent_rationale/beer/models/rl.py	/^    def __init__(self,$/;"	m	class:RLModel
+__init__	latent_rationale/beer/models/simpleclassifier.py	/^    def __init__(self, vocab_size, emb_size, hidden_size, output_size,$/;"	m	class:SimpleClassifier
+__init__	latent_rationale/beer/vocabulary.py	/^    def __init__(self):$/;"	m	class:Vocabulary
+__init__	latent_rationale/common/classifier.py	/^    def __init__(self,$/;"	m	class:CHEFClassifier
+__init__	latent_rationale/common/classifier.py	/^    def __init__(self,$/;"	m	class:Classifier
+__init__	latent_rationale/common/encoder.py	/^    def __init__(self,$/;"	m	class:Encoder
+__init__	latent_rationale/common/generator.py	/^    def __init__(self,$/;"	m	class:DependentGenerator
+__init__	latent_rationale/common/generator.py	/^    def __init__(self,$/;"	m	class:IndependentGenerator
+__init__	latent_rationale/common/latent.py	/^    def __init__(self,$/;"	m	class:DependentLatentModel
+__init__	latent_rationale/common/latent.py	/^    def __init__(self,$/;"	m	class:IndependentLatentModel
+__init__	latent_rationale/nn/attention.py	/^    def __init__(self):$/;"	m	class:AttentionMechanism
+__init__	latent_rationale/nn/attention.py	/^    def __init__(self):$/;"	m	class:DotAttention
+__init__	latent_rationale/nn/attention.py	/^    def __init__(self, hidden_size=1, key_size=1, dropout=0.2):$/;"	m	class:SimpleAttention
+__init__	latent_rationale/nn/attention.py	/^    def __init__(self, hidden_size=1, key_size=1, query_size=1):$/;"	m	class:BahdanauAttention
+__init__	latent_rationale/nn/attention.py	/^    def __init__(self, in_features, out_features, dropout=0.2):$/;"	m	class:DeepDotAttention
+__init__	latent_rationale/nn/bernoulli_gate.py	/^    def __init__(self, in_features, out_features=1):$/;"	m	class:BernoulliGate
+__init__	latent_rationale/nn/bow_encoder.py	/^    def __init__(self):$/;"	m	class:BOWEncoder
+__init__	latent_rationale/nn/cnn_encoder.py	/^    def __init__(self,$/;"	m	class:CNNEncoder
+__init__	latent_rationale/nn/kuma.py	/^    def __init__(self, dist: RelaxedBinary, support: list):$/;"	m	class:StretchedVariable
+__init__	latent_rationale/nn/kuma.py	/^    def __init__(self, dist: StretchedVariable):$/;"	m	class:HardBinary
+__init__	latent_rationale/nn/kuma.py	/^    def __init__(self, params: list):$/;"	m	class:Kuma
+__init__	latent_rationale/nn/kuma.py	/^    def __init__(self, params: list, support: list):$/;"	m	class:HardKuma
+__init__	latent_rationale/nn/kuma_attention.py	/^    def __init__(self, in_features, out_features, support=(-0.1, 1.1),$/;"	m	class:KumaAttention
+__init__	latent_rationale/nn/kuma_gate.py	/^    def __init__(self, in_features, out_features=1, support=(-0.1, 1.1),$/;"	m	class:KumaGate
+__init__	latent_rationale/nn/kuma_self_attention.py	/^    def __init__(self, in_features, out_features, support=(-0.1, 1.1),$/;"	m	class:KumaSelfAttention
+__init__	latent_rationale/nn/lstm_encoder.py	/^    def __init__(self, in_features, hidden_size: int = 200,$/;"	m	class:LSTMEncoder
+__init__	latent_rationale/nn/rcnn.py	/^    def __init__(self, in_features, hidden_size, bidirectional=False):$/;"	m	class:RCNN
+__init__	latent_rationale/nn/rcnn.py	/^    def __init__(self, input_size, hidden_size):$/;"	m	class:RCNNCell
+__init__	latent_rationale/nn/rcnn_encoder.py	/^    def __init__(self, in_features, hidden_size, batch_first: bool = True,$/;"	m	class:RCNNEncoder
+__init__	latent_rationale/snli/encoder.py	/^    def __init__(self, cfg):$/;"	m	class:RecurrentEncoder
+__init__	latent_rationale/snli/models/decomposable.py	/^    def __init__(self, cfg, vocab):$/;"	m	class:DecompAttModel
+__init__	latent_rationale/snli/models/decomposable_kuma.py	/^    def __init__(self, cfg, vocab):$/;"	m	class:KumaDecompAttModel
+__init__	latent_rationale/snli/models/recurrent.py	/^    def __init__(self, cfg, vocab):$/;"	m	class:RecurrentModel
+__init__	latent_rationale/snli/models/recurrent.py	/^    def __init__(self, cfg, vocab, bert_type="bert-base-chinese"):$/;"	m	class:CHEFRecurrentModel
+__init__	latent_rationale/snli/text.py	/^    def __init__(self):$/;"	m	class:ShiftReduceField
+__init__	latent_rationale/snli/text.py	/^    def __init__(self, eos_token='<pad>', lower=False):$/;"	m	class:ParsedTextField
+__init__	latent_rationale/sst/CHEFtrain.py	/^    def __init__(self, claims_ids, evidences_ids_list, labels):$/;"	m	class:CHEFDataset
+__init__	latent_rationale/sst/models/baseline.py	/^    def __init__(self, vocab_size, emb_size, hidden_size, output_size,$/;"	m	class:Baseline
+__init__	latent_rationale/sst/models/latent.py	/^    def __init__(self,$/;"	m	class:LatentRationaleModel
+__init__	latent_rationale/sst/models/latent.py	/^    def __init__(self,$/;"	m	class:LatentRationaleModelForCHEF
+__init__	latent_rationale/sst/models/rl.py	/^    def __init__(self,$/;"	m	class:RLModel
+__init__	latent_rationale/sst/vocabulary.py	/^    def __init__(self):$/;"	m	class:Vocabulary
+__len__	latent_rationale/sst/CHEFtrain.py	/^    def __len__(self):$/;"	m	class:CHEFDataset	file:
+__reduce__	latent_rationale/beer/vocabulary.py	/^    def __reduce__(self):$/;"	m	class:OrderedCounter	file:
+__reduce__	latent_rationale/sst/vocabulary.py	/^    def __reduce__(self):$/;"	m	class:OrderedCounter	file:
+__repr__	latent_rationale/beer/vocabulary.py	/^    def __repr__(self):$/;"	m	class:OrderedCounter	file:
+__repr__	latent_rationale/nn/attention.py	/^    def __repr__(self):$/;"	m	class:BahdanauAttention	file:
+__repr__	latent_rationale/nn/attention.py	/^    def __repr__(self):$/;"	m	class:SimpleAttention	file:
+__repr__	latent_rationale/nn/rcnn.py	/^    def __repr__(self):$/;"	m	class:RCNNCell	file:
+__repr__	latent_rationale/sst/vocabulary.py	/^    def __repr__(self):$/;"	m	class:OrderedCounter	file:
+_add_rel_dists	latent_rationale/nn/kuma_self_attention.py	/^    def _add_rel_dists(self, x):$/;"	m	class:KumaSelfAttention
+_add_rel_dists	latent_rationale/snli/models/decomposable.py	/^    def _add_rel_dists(self, x):$/;"	m	class:DecompAttModel
+_add_rel_dists	latent_rationale/snli/models/decomposable_kuma.py	/^    def _add_rel_dists(self, x):$/;"	m	class:KumaDecompAttModel
+_harmonic_number	latent_rationale/nn/kuma.py	/^def _harmonic_number(x):$/;"	f
+_mask_diagonal	latent_rationale/nn/kuma_self_attention.py	/^    def _mask_diagonal(self, x, mask_value=0.):$/;"	m	class:KumaSelfAttention
+_mask_diagonal	latent_rationale/snli/models/decomposable.py	/^    def _mask_diagonal(self, x):$/;"	m	class:DecompAttModel
+_mask_diagonal	latent_rationale/snli/models/decomposable_kuma.py	/^    def _mask_diagonal(self, x):$/;"	m	class:KumaDecompAttModel
+_mask_padding	latent_rationale/snli/models/decomposable.py	/^    def _mask_padding(self, x, mask, value=0.):$/;"	m	class:DecompAttModel
+_mask_padding	latent_rationale/snli/models/decomposable_kuma.py	/^    def _mask_padding(self, x, mask, value=0.):$/;"	m	class:KumaDecompAttModel
+_step	latent_rationale/nn/rcnn.py	/^    def _step(x_t, cell, state: tuple, mask_t):$/;"	m	class:RCNN
+_tokens_from_binary_parse	latent_rationale/snli/util.py	/^    def _tokens_from_binary_parse(s):$/;"	f	function:get_data_fields
+_tokens_from_non_binary_parse	latent_rationale/snli/util.py	/^    def _tokens_from_non_binary_parse(s):$/;"	f	function:get_data_fields
+_unroll	latent_rationale/nn/rcnn.py	/^    def _unroll(x, cell, mask,$/;"	m	class:RCNN
+add_token	latent_rationale/beer/vocabulary.py	/^    def add_token(self, t):$/;"	m	class:Vocabulary
+add_token	latent_rationale/sst/vocabulary.py	/^    def add_token(self, t):$/;"	m	class:Vocabulary
+beer_annotations_reader	latent_rationale/beer/util.py	/^def beer_annotations_reader(path, aspect=-1):$/;"	f
+beer_reader	latent_rationale/beer/util.py	/^def beer_reader(path, aspect=-1, max_len=0):$/;"	f
+build	latent_rationale/beer/vocabulary.py	/^    def build(self, min_freq=0):$/;"	m	class:Vocabulary
+build	latent_rationale/sst/vocabulary.py	/^    def build(self, min_freq=0):$/;"	m	class:Vocabulary
+build_CHEFmodel	latent_rationale/sst/models/model_helpers.py	/^def build_CHEFmodel(bert_type, cfg):$/;"	f
+build_model	latent_rationale/beer/models/model_helpers.py	/^def build_model(model_type, vocab, cfg=None):$/;"	f
+build_model	latent_rationale/snli/models/model_helper.py	/^def build_model(cfg, vocab):$/;"	f
+build_model	latent_rationale/sst/models/model_helpers.py	/^def build_model(model_type, vocab, t2i, cfg):$/;"	f
+cdf	latent_rationale/nn/kuma.py	/^    def cdf(self, x):$/;"	m	class:RV
+compute_proj_keys	latent_rationale/nn/attention.py	/^    def compute_proj_keys(self, keys):$/;"	m	class:BahdanauAttention
+compute_proj_query	latent_rationale/nn/attention.py	/^    def compute_proj_query(self, query):$/;"	m	class:BahdanauAttention
+convert_to_tensor	latent_rationale/nn/kuma.py	/^def convert_to_tensor(x):$/;"	f
+count_token	latent_rationale/beer/vocabulary.py	/^    def count_token(self, t):$/;"	m	class:Vocabulary
+count_token	latent_rationale/sst/vocabulary.py	/^    def count_token(self, t):$/;"	m	class:Vocabulary
+decorate_token	latent_rationale/beer/util.py	/^def decorate_token(t, z_):$/;"	f
+device	latent_rationale/beer/models/latent.py	/^device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')$/;"	v
+device	latent_rationale/beer/models/rl.py	/^device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')$/;"	v
+device	latent_rationale/nn/kuma_gate.py	/^device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')$/;"	v
+device	latent_rationale/sst/CHEFtrain.py	/^device = get_device()$/;"	v
+device	latent_rationale/sst/models/latent.py	/^device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')$/;"	v
+device	latent_rationale/sst/models/rl.py	/^device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')$/;"	v
+device	latent_rationale/sst/train.py	/^device = get_device()$/;"	v
+dirname	latent_rationale/snli/text.py	/^    dirname = 'snli_1.0'$/;"	v	class:SNLI
+dump_rationales	latent_rationale/beer/evaluate.py	/^def dump_rationales(model, data, path, device=None, batch_size=256):$/;"	f
+empty_state	latent_rationale/nn/rcnn.py	/^    def empty_state(batch_size, hidden_size, device):$/;"	m	class:RCNN
+entropy	latent_rationale/nn/kuma.py	/^    def entropy(self):$/;"	m	class:RV
+evaluate	latent_rationale/snli/evaluate.py	/^def evaluate(model, criterion, data_iter):$/;"	f
+evaluate	latent_rationale/sst/evaluate.py	/^def evaluate(model, data, batch_size=25, device=None):$/;"	f
+evaluate_loss	latent_rationale/beer/evaluate.py	/^def evaluate_loss(model, data, batch_size=256, device=None, cfg=None):$/;"	f
+evaluate_rationale	latent_rationale/beer/evaluate.py	/^def evaluate_rationale(model, data, aspect=None, batch_size=256, device=None,$/;"	f
+extract_attention	latent_rationale/snli/util.py	/^def extract_attention(model, data_iter, input_vocab, answer_vocab):$/;"	f
+filereader	latent_rationale/beer/util.py	/^def filereader(path):$/;"	f
+filereader	latent_rationale/sst/util.py	/^def filereader(path):$/;"	f
+find_ckpt_in_directory	latent_rationale/beer/util.py	/^def find_ckpt_in_directory(path):$/;"	f
+find_ckpt_in_directory	latent_rationale/snli/util.py	/^def find_ckpt_in_directory(path):$/;"	f
+find_ckpt_in_directory	latent_rationale/sst/util.py	/^def find_ckpt_in_directory(path):$/;"	f
+format_time	latent_rationale/sst/CHEFtrain.py	/^def format_time(elapsed):$/;"	f
+forward	latent_rationale/beer/models/latent.py	/^    def forward(self, x):$/;"	m	class:LatentRationaleModel
+forward	latent_rationale/beer/models/rl.py	/^    def forward(self, x):$/;"	m	class:RLModel
+forward	latent_rationale/beer/models/simpleclassifier.py	/^    def forward(self, x):$/;"	m	class:SimpleClassifier
+forward	latent_rationale/common/classifier.py	/^    def forward(self, claims_ebd, evidences_ebd, z=None):$/;"	m	class:CHEFClassifier
+forward	latent_rationale/common/classifier.py	/^    def forward(self, x, mask, z=None):$/;"	m	class:Classifier
+forward	latent_rationale/common/encoder.py	/^    def forward(self, x, mask, z=None):$/;"	m	class:Encoder
+forward	latent_rationale/common/generator.py	/^    def forward(self, x, mask):$/;"	m	class:IndependentGenerator
+forward	latent_rationale/common/generator.py	/^    def forward(self, x, mask, num_samples=1):$/;"	m	class:DependentGenerator
+forward	latent_rationale/common/latent.py	/^    def forward(self, x, mask):$/;"	m	class:DependentLatentModel
+forward	latent_rationale/common/latent.py	/^    def forward(self, x, mask, **kwargs):$/;"	m	class:IndependentLatentModel
+forward	latent_rationale/nn/attention.py	/^    def forward(self, *input):$/;"	m	class:AttentionMechanism
+forward	latent_rationale/nn/attention.py	/^    def forward(self, q, k):$/;"	m	class:DeepDotAttention
+forward	latent_rationale/nn/attention.py	/^    def forward(self, q, k):$/;"	m	class:DotAttention
+forward	latent_rationale/nn/attention.py	/^    def forward(self, query: torch.Tensor = None,$/;"	m	class:BahdanauAttention
+forward	latent_rationale/nn/attention.py	/^    def forward(self,$/;"	m	class:SimpleAttention
+forward	latent_rationale/nn/bernoulli_gate.py	/^    def forward(self, x):$/;"	m	class:BernoulliGate
+forward	latent_rationale/nn/bow_encoder.py	/^    def forward(self, x, mask, lengths):$/;"	m	class:BOWEncoder
+forward	latent_rationale/nn/cnn_encoder.py	/^    def forward(self, x, mask, lengths):$/;"	m	class:CNNEncoder
+forward	latent_rationale/nn/kuma_attention.py	/^    def forward(self, q, k):$/;"	m	class:KumaAttention
+forward	latent_rationale/nn/kuma_gate.py	/^    def forward(self, x, mask=None):$/;"	m	class:KumaGate
+forward	latent_rationale/nn/kuma_self_attention.py	/^    def forward(self, q, k):$/;"	m	class:KumaSelfAttention
+forward	latent_rationale/nn/lstm_encoder.py	/^    def forward(self, x, mask, lengths):$/;"	m	class:LSTMEncoder
+forward	latent_rationale/nn/rcnn.py	/^    def forward(self, input_, prev, mask=None):$/;"	m	class:RCNNCell
+forward	latent_rationale/nn/rcnn.py	/^    def forward(self, x, mask, lengths=None, state: tuple = None):$/;"	m	class:RCNN
+forward	latent_rationale/nn/rcnn_encoder.py	/^    def forward(self, x, mask, lengths):$/;"	m	class:RCNNEncoder
+forward	latent_rationale/snli/encoder.py	/^    def forward(self, x, length, mask):$/;"	m	class:RecurrentEncoder
+forward	latent_rationale/snli/models/decomposable.py	/^    def forward(self, batch):$/;"	m	class:DecompAttModel
+forward	latent_rationale/snli/models/decomposable_kuma.py	/^    def forward(self, batch):$/;"	m	class:KumaDecompAttModel
+forward	latent_rationale/snli/models/recurrent.py	/^    def forward(self, batch):$/;"	m	class:CHEFRecurrentModel
+forward	latent_rationale/snli/models/recurrent.py	/^    def forward(self, batch):$/;"	m	class:RecurrentModel
+forward	latent_rationale/sst/models/baseline.py	/^    def forward(self, x, **kwargs):$/;"	m	class:Baseline
+forward	latent_rationale/sst/models/latent.py	/^    def forward(self, batch):$/;"	m	class:LatentRationaleModelForCHEF
+forward	latent_rationale/sst/models/latent.py	/^    def forward(self, x):$/;"	m	class:LatentRationaleModel
+forward	latent_rationale/sst/models/rl.py	/^    def forward(self, x, **kwargs):$/;"	m	class:RLModel
+get_args	latent_rationale/beer/util.py	/^def get_args():$/;"	f
+get_args	latent_rationale/snli/util.py	/^def get_args():$/;"	f
+get_args	latent_rationale/sst/util.py	/^def get_args():$/;"	f
+get_data_fields	latent_rationale/snli/util.py	/^def get_data_fields(glove_words, lowercase=False,$/;"	f
+get_device	latent_rationale/beer/util.py	/^def get_device():$/;"	f
+get_device	latent_rationale/snli/util.py	/^def get_device():$/;"	f
+get_device	latent_rationale/sst/util.py	/^def get_device():$/;"	f
+get_encoder	latent_rationale/common/util.py	/^def get_encoder(layer, in_features, hidden_size, bidirectional=True):$/;"	f
+get_examples	latent_rationale/beer/evaluate.py	/^def get_examples(model, data, num_examples=3, batch_size=1, device=None):$/;"	f
+get_histogram_counts	latent_rationale/sst/evaluate.py	/^def get_histogram_counts(z=None, mask=None, mb=None):$/;"	f
+get_loss	latent_rationale/beer/models/latent.py	/^    def get_loss(self, preds, targets, mask=None):$/;"	m	class:LatentRationaleModel
+get_loss	latent_rationale/beer/models/rl.py	/^    def get_loss(self, preds, targets, mask=None):$/;"	m	class:RLModel
+get_loss	latent_rationale/beer/models/simpleclassifier.py	/^    def get_loss(self, prediction, targets, **kwargs):$/;"	m	class:SimpleClassifier
+get_loss	latent_rationale/snli/models/decomposable.py	/^    def get_loss(self, logits, targets):$/;"	m	class:DecompAttModel
+get_loss	latent_rationale/snli/models/decomposable_kuma.py	/^    def get_loss(self, logits, targets):$/;"	m	class:KumaDecompAttModel
+get_loss	latent_rationale/snli/models/recurrent.py	/^    def get_loss(self, logits, targets):$/;"	m	class:CHEFRecurrentModel
+get_loss	latent_rationale/snli/models/recurrent.py	/^    def get_loss(self, logits, targets):$/;"	m	class:RecurrentModel
+get_loss	latent_rationale/sst/models/baseline.py	/^    def get_loss(self, logits, targets, **kwargs):$/;"	m	class:Baseline
+get_loss	latent_rationale/sst/models/latent.py	/^    def get_loss(self, logits, targets, mask=None, **kwargs):$/;"	m	class:LatentRationaleModel
+get_loss	latent_rationale/sst/models/latent.py	/^    def get_loss(self, logits, targets, mask=None, **kwargs):$/;"	m	class:LatentRationaleModelForCHEF
+get_loss	latent_rationale/sst/models/rl.py	/^    def get_loss(self, logits, targets, mask=None, **kwargs):$/;"	m	class:RLModel
+get_minibatch	latent_rationale/beer/util.py	/^def get_minibatch(data, batch_size=256, shuffle=False):$/;"	f
+get_minibatch	latent_rationale/sst/util.py	/^def get_minibatch(data, batch_size=25, shuffle=False):$/;"	f
+get_n_correct	latent_rationale/snli/util.py	/^def get_n_correct(batch, answer):$/;"	f
+get_predict_args	latent_rationale/beer/util.py	/^def get_predict_args():$/;"	f
+get_predict_args	latent_rationale/snli/util.py	/^def get_predict_args():$/;"	f
+get_predict_args	latent_rationale/sst/util.py	/^def get_predict_args():$/;"	f
+get_relative_positions	latent_rationale/nn/position.py	/^def get_relative_positions(size, max_dist, device=None):$/;"	f
+get_z_counts	latent_rationale/snli/util.py	/^def get_z_counts(att, prem_mask, hypo_mask):$/;"	f
+get_z_stats	latent_rationale/common/util.py	/^def get_z_stats(z=None, mask=None):$/;"	f
+hash_token	latent_rationale/snli/util.py	/^def hash_token(token, n=100):$/;"	f
+initialize_model_	latent_rationale/beer/util.py	/^def initialize_model_(model):$/;"	f
+initialize_model_	latent_rationale/sst/util.py	/^def initialize_model_(model):$/;"	f
+iters	latent_rationale/snli/text.py	/^    def iters(cls, batch_size=32, device=0, root='.data',$/;"	m	class:SNLI
+kuma_mean	latent_rationale/nn/kuma.py	/^def kuma_mean(a, b):$/;"	f
+kuma_moments	latent_rationale/nn/kuma.py	/^def kuma_moments(a, b, n):$/;"	f
+lagrange_parameters	latent_rationale/sst/models/rl.py	/^    def lagrange_parameters(self):$/;"	m	class:RLModel
+lbeta	latent_rationale/nn/kuma.py	/^def lbeta(a, b):$/;"	f
+lbeta	latent_rationale/nn/kuma.py	/^def lbeta(x):$/;"	f
+loadData	latent_rationale/sst/CHEFtrain.py	/^def loadData(filepath, tokenizer):$/;"	f
+load_embeddings	latent_rationale/beer/util.py	/^def load_embeddings(path, vocab, dim=200):$/;"	f
+load_glove	latent_rationale/sst/util.py	/^def load_glove(glove_path, vocab, glove_dim=300):$/;"	f
+load_glove_words	latent_rationale/snli/util.py	/^def load_glove_words(word_vectors):$/;"	f
+log_cdf	latent_rationale/nn/kuma.py	/^    def log_cdf(self, x):$/;"	m	class:HardBinary
+log_cdf	latent_rationale/nn/kuma.py	/^    def log_cdf(self, x):$/;"	m	class:Kuma
+log_cdf	latent_rationale/nn/kuma.py	/^    def log_cdf(self, x):$/;"	m	class:RV
+log_cdf	latent_rationale/nn/kuma.py	/^    def log_cdf(self, x):$/;"	m	class:StretchedVariable
+log_pdf	latent_rationale/nn/kuma.py	/^    def log_pdf(self, x):$/;"	m	class:HardBinary
+log_pdf	latent_rationale/nn/kuma.py	/^    def log_pdf(self, x):$/;"	m	class:Kuma
+log_pdf	latent_rationale/nn/kuma.py	/^    def log_pdf(self, x):$/;"	m	class:RV
+log_pdf	latent_rationale/nn/kuma.py	/^    def log_pdf(self, x):$/;"	m	class:StretchedVariable
+make_kv_string	latent_rationale/common/util.py	/^def make_kv_string(d):$/;"	f
+makedirs	latent_rationale/snli/util.py	/^def makedirs(name):$/;"	f
+masked_softmax	latent_rationale/snli/util.py	/^def masked_softmax(t, mask, dim=-1):$/;"	f
+mean	latent_rationale/nn/kuma.py	/^    def mean(self):$/;"	m	class:HardKuma
+mean	latent_rationale/nn/kuma.py	/^    def mean(self):$/;"	m	class:Kuma
+name	latent_rationale/snli/text.py	/^    name = 'snli'$/;"	v	class:SNLI
+pad	latent_rationale/beer/util.py	/^def pad(tokens, length, pad_value=1):$/;"	f
+pad	latent_rationale/sst/util.py	/^def pad(tokens, length, pad_value=1):$/;"	f
+params	latent_rationale/nn/kuma.py	/^    def params(self):$/;"	m	class:HardBinary
+params	latent_rationale/nn/kuma.py	/^    def params(self):$/;"	m	class:Kuma
+params	latent_rationale/nn/kuma.py	/^    def params(self):$/;"	m	class:RV
+params	latent_rationale/nn/kuma.py	/^    def params(self):$/;"	m	class:StretchedVariable
+pdf	latent_rationale/nn/kuma.py	/^    def pdf(self, x):$/;"	m	class:RV
+plot_dataset	latent_rationale/sst/util.py	/^def plot_dataset(model, data, batch_size=100, device=None, save_path=".",$/;"	f
+plot_heatmap	latent_rationale/snli/plotting.py	/^def plot_heatmap(scores=None, column_labels=None, row_labels=None,$/;"	f
+plot_heatmap	latent_rationale/sst/plotting.py	/^def plot_heatmap(scores=None, column_labels=None, row_labels=None,$/;"	f
+predict	latent_rationale/beer/models/rl.py	/^    def predict(self, x, **kwargs):$/;"	m	class:RLModel
+predict	latent_rationale/beer/predict.py	/^def predict():$/;"	f
+predict	latent_rationale/snli/predict.py	/^def predict():$/;"	f
+predict	latent_rationale/sst/models/baseline.py	/^    def predict(self, logits):$/;"	m	class:Baseline
+predict	latent_rationale/sst/models/latent.py	/^    def predict(self, logits, **kwargs):$/;"	m	class:LatentRationaleModel
+predict	latent_rationale/sst/models/latent.py	/^    def predict(self, logits, **kwargs):$/;"	m	class:LatentRationaleModelForCHEF
+predict	latent_rationale/sst/models/rl.py	/^    def predict(self, logits, **kwargs):$/;"	m	class:RLModel
+predict	latent_rationale/sst/predict.py	/^def predict():$/;"	f
+prepare_minibatch	latent_rationale/beer/util.py	/^def prepare_minibatch(mb, vocab, device=None, sort=True):$/;"	f
+prepare_minibatch	latent_rationale/sst/util.py	/^def prepare_minibatch(mb, vocab, device=None, sort=True):$/;"	f
+print_config	latent_rationale/snli/util.py	/^def print_config(config):$/;"	f
+print_examples	latent_rationale/snli/util.py	/^def print_examples(model, data_iter, input_vocab, answer_vocab, save_path,$/;"	f
+print_parameters	latent_rationale/beer/util.py	/^def print_parameters(model):$/;"	f
+print_parameters	latent_rationale/snli/util.py	/^def print_parameters(model):$/;"	f
+print_parameters	latent_rationale/sst/util.py	/^def print_parameters(model):$/;"	f
+remove_padding	latent_rationale/snli/util.py	/^def remove_padding(text, pad_token):$/;"	f
+report_params	latent_rationale/common/classifier.py	/^    def report_params(self):$/;"	m	class:CHEFClassifier
+report_params	latent_rationale/common/classifier.py	/^    def report_params(self):$/;"	m	class:Classifier
+report_params	latent_rationale/common/generator.py	/^    def report_params(self):$/;"	m	class:DependentGenerator
+report_params	latent_rationale/common/generator.py	/^    def report_params(self):$/;"	m	class:IndependentGenerator
+report_params	latent_rationale/common/latent.py	/^    def report_params(self):$/;"	m	class:DependentLatentModel
+report_params	latent_rationale/common/latent.py	/^    def report_params(self):$/;"	m	class:IndependentLatentModel
+reset_parameters	latent_rationale/nn/rcnn.py	/^    def reset_parameters(self):$/;"	m	class:RCNNCell
+reset_params	latent_rationale/snli/models/decomposable.py	/^    def reset_params(self):$/;"	m	class:DecompAttModel
+reset_params	latent_rationale/snli/models/decomposable_kuma.py	/^    def reset_params(self):$/;"	m	class:KumaDecompAttModel
+sample	latent_rationale/nn/kuma.py	/^    def sample(self, size=None):$/;"	m	class:HardBinary
+sample	latent_rationale/nn/kuma.py	/^    def sample(self, size=None):$/;"	m	class:RV
+sample	latent_rationale/nn/kuma.py	/^    def sample(self, size=None):$/;"	m	class:StretchedVariable
+sample	latent_rationale/nn/kuma.py	/^    def sample(self, size=None, eps=0.001):$/;"	m	class:Kuma
+save_checkpoint	latent_rationale/snli/util.py	/^def save_checkpoint(ckpt, save_path, iterations, prefix="ckpt",$/;"	f
+sort_key	latent_rationale/snli/text.py	/^    def sort_key(ex):$/;"	m	class:SNLI
+splits	latent_rationale/snli/text.py	/^    def splits(cls, text_field, label_field, parse_field=None, root='.data',$/;"	m	class:SNLI
+sst_reader	latent_rationale/sst/util.py	/^def sst_reader(path, lower=False):$/;"	f
+token_labels_from_treestring	latent_rationale/sst/util.py	/^def token_labels_from_treestring(s):$/;"	f
+tokens_from_treestring	latent_rationale/sst/util.py	/^def tokens_from_treestring(s):$/;"	f
+train	latent_rationale/beer/train.py	/^def train():$/;"	f
+train	latent_rationale/snli/train.py	/^def train():$/;"	f
+train	latent_rationale/sst/CHEFtrain.py	/^def train():$/;"	f
+train	latent_rationale/sst/train.py	/^def train():$/;"	f
+unk_unknown_tokens	latent_rationale/snli/util.py	/^def unk_unknown_tokens(tokens, n=100, lowercase=False,$/;"	f
+urls	latent_rationale/snli/text.py	/^    urls = ['http:\/\/nlp.stanford.edu\/projects\/snli\/snli_1.0.zip']$/;"	v	class:SNLI
+xavier_uniform_n_	latent_rationale/beer/util.py	/^def xavier_uniform_n_(w, gain=1., n=4):$/;"	f
+xavier_uniform_n_	latent_rationale/sst/util.py	/^def xavier_uniform_n_(w, gain=1., n=4):$/;"	f
+z	latent_rationale/beer/models/latent.py	/^    def z(self):$/;"	m	class:LatentRationaleModel
+z	latent_rationale/beer/models/rl.py	/^    def z(self):$/;"	m	class:RLModel
+z	latent_rationale/sst/models/latent.py	/^    def z(self):$/;"	m	class:LatentRationaleModel
+z	latent_rationale/sst/models/rl.py	/^    def z(self):$/;"	m	class:RLModel
+z_dists	latent_rationale/beer/models/latent.py	/^    def z_dists(self):$/;"	m	class:LatentRationaleModel
+z_dists	latent_rationale/sst/models/latent.py	/^    def z_dists(self):$/;"	m	class:LatentRationaleModel
+z_layer	latent_rationale/beer/models/latent.py	/^    def z_layer(self):$/;"	m	class:LatentRationaleModel
+z_layer	latent_rationale/beer/models/rl.py	/^    def z_layer(self):$/;"	m	class:RLModel
+z_layer	latent_rationale/sst/models/latent.py	/^    def z_layer(self):$/;"	m	class:LatentRationaleModel
+z_layer	latent_rationale/sst/models/rl.py	/^    def z_layer(self):$/;"	m	class:RLModel
