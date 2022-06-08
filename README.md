@@ -31,7 +31,6 @@ Our models are in the Joint directory, and you can also find baseline models und
     ├── train.json
     ├── dev.json
     └── test.json
-
 ```
 ### Download
 
@@ -43,7 +42,9 @@ For the Joint model (Ours), you can download the data and put it in the Data dir
  
 ## Acknowledgements
 [Interpretable_Predictions](https://github.com/bastings/interpretable_predictions)
+
 [Kernel Graph Attention Network](https://github.com/thunlp/KernelGAT)
+
 [X-Fact](https://github.com/utahnlp/x-fact)
 
 
